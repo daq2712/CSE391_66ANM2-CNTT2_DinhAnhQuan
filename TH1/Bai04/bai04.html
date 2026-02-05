@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BT04</title>
+  <link rel="stylesheet" href="bai04style.css">
+</head>
+
+<body>
+  <main>
+    <article>
+      <header>
+        <h1>Employee Form</h1>
+      </header>
+
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Basic Info</legend>
+
+          <dl>
+            <dt><label for="emp-id">Employee ID <span class="req">*</span></label></dt>
+            <dd><input id="emp-id" name="emp_id" type="text" value="9" required /></dd>
+
+            <dt><label for="last-name">Last Name <span class="req">*</span></label></dt>
+            <dd><input id="last-name" name="last_name" type="text" value="Dodsworth" required /></dd>
+
+            <dt><label for="first-name">First Name <span class="req">*</span></label></dt>
+            <dd><input id="first-name" name="first_name" type="text" value="Anne" required /></dd>
+
+            <dt>Gender <span class="req">*</span></dt>
+            <dd>
+              <ul class="options" aria-label="Gender">
+                <li><label><input type="radio" name="gender" value="male" /> Male</label></li>
+                <li><label><input type="radio" name="gender" value="female" checked /> Female</label></li>
+                <li><label><input type="radio" name="gender" value="xxx" /> XXX</label></li>
+                <li><label><input type="radio" name="gender" value="zzz" /> ZZZ</label></li>
+              </ul>
+            </dd>
+
+            <dt><label for="title">Title <span class="req">*</span></label></dt>
+            <dd><input id="title" name="title" type="text" value="Sales Representative" required /></dd>
+
+            <dt><label for="suffix">Suffix</label></dt>
+            <dd><input id="suffix" name="suffix" type="text" value="Ms." /></dd>
+
+            <dt><label for="birthdate">BirthDate</label></dt>
+            <dd><input id="birthdate" name="birthdate" type="date" /></dd>
+
+            <dt><label for="hiredate">HireDate</label></dt>
+            <dd><input id="hiredate" name="hiredate" type="date" /></dd>
+
+            <dt><label for="ssn">SSN (if applicable)</label></dt>
+            <dd><input id="ssn" name="ssn" type="text" placeholder="___-__-____" /></dd>
+
+            <dt><label for="reports-to">Reports To</label></dt>
+            <dd>
+              <select id="reports-to" name="reports_to">
+                <option value="">-- Select --</option>
+                <option selected>Buchanan</option>
+                <option>Fuller</option>
+                <option>King</option>
+              </select>
+            </dd>
+          </dl>
+        </fieldset>
+
+        <fieldset>
+          <legend>Contact Info</legend>
+
+          <dl>
+            <dt><label for="email">Email</label></dt>
+            <dd><input id="email" name="email" type="email" value="name@example.com" /></dd>
+
+            <dt><label for="address">Address</label></dt>
+            <dd><input id="address" name="address" type="text" value="7 Hounds tooth Rd." /></dd>
+
+            <dt><label for="city">City</label></dt>
+            <dd><input id="city" name="city" type="text" value="London" /></dd>
+
+            <dt><label for="region">Region</label></dt>
+            <dd><input id="region" name="region" type="text" /></dd>
+
+            <dt><label for="postal">Postal Code</label></dt>
+            <dd><input id="postal" name="postal" type="text" value="WG2 7LT" /></dd>
+
+            <dt><label for="country">Country</label></dt>
+            <dd>
+              <select id="country" name="country">
+                <option>Viet Nam</option>
+                <option>United Kingdom</option>
+                <option selected>Russian Federation</option>
+                <option>United States</option>
+              </select>
+            </dd>
+
+            <dt><label for="home-phone">US Home Phone</label></dt>
+            <dd><input id="home-phone" name="home_phone" type="tel" value="(234)234-2342" /></dd>
+
+            <dt><label for="photo">Photo</label></dt>
+            <dd><input id="photo" name="photo" type="text" value="EmpID9.bmp" /></dd>
+          </dl>
+        </fieldset>
+
+        <fieldset>
+          <legend>Optional Info</legend>
+
+          <dl>
+            <dt><label for="notes">Notes</label></dt>
+            <dd>
+              <section class="editor" aria-label="Notes editor (UI only)">
+                <menu type="toolbar" aria-label="Formatting toolbar">
+                  <li><span class="tool"><b>B</b></span></li>
+                  <li><span class="tool"><i>I</i></span></li>
+                  <li><span class="tool"><u>U</u></span></li>
+                  <li><span class="tool">•</span></li>
+                  <li><span class="tool">1.</span></li>
+                  <li><span class="tool">⟲</span></li>
+                </menu>
+                <textarea id="notes" name="notes">Anne has a BA degree in English from St. Lawrence College.
+She is fluent in French and German ZZZ.</textarea>
+              </section>
+            </dd>
+
+            <dt>Preferred Shift</dt>
+            <dd>
+              <ul class="options" aria-label="Preferred shift">
+                <li><label><input type="radio" name="shift" value="regular" checked /> Regular</label></li>
+                <li><label><input type="radio" name="shift" value="graveyard" /> Gray Yard</label></li>
+              </ul>
+            </dd>
+
+            <dt><label for="active">Active?</label></dt>
+            <dd>
+              <label>
+                <input id="active" name="active" type="checkbox" checked />
+                Yes
+              </label>
+            </dd>
+          </dl>
+
+          <section class="captcha" aria-label="Human verification (UI only)">
+            <h2 style="margin:0; font-size:13px; font-weight:600;">
+              Are you human? <span class="req">*</span>
+            </h2>
+
+            <section>
+              <p style="margin:0 0 8px 0;">
+                <code aria-label="captcha code">TIDAWO</code>
+                <button type="button" aria-disabled="true" title="UI only">Click to change</button>
+              </p>
+              <label for="captcha-input" class="visually-hidden" style="position:absolute;left:-9999px;">Captcha</label>
+              <input id="captcha-input" name="captcha" type="text" placeholder="Nhập mã" required />
+              <small>Chỉ dựng giao diện: nút “Click to change” không hoạt động vì không dùng JavaScript.</small>
+            </section>
+          </section>
+        </fieldset>
+
+        <nav class="actions" aria-label="Form actions">
+          <button type="reset">Cancel</button>
+          <button type="submit">Submit</button>
+        </nav>
+
+        <footer>
+          <span class="dot" aria-hidden="true"></span>
+          <span><strong>*</strong> required</span>
+        </footer>
+      </form>
+    </article>
+  </main>
+</body>
+</html>

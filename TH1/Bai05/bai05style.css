@@ -1,0 +1,192 @@
+:root{
+  --bg:#f1f3f5;
+  --card:#ffffff;
+  --border:#d9dee6;
+  --shadow:0 10px 24px rgba(0,0,0,.08);
+  --nav:#1f2328;
+  --blue:#1f6feb;
+  --warn:#fbbf24;
+  --danger:#ef4444;
+  --success:#16a34a;
+  --muted:#6b7280;
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:system-ui,Segoe UI,Arial,sans-serif;
+  background:var(--bg);
+}
+
+header{
+  background:var(--nav);
+  color:#fff;
+}
+
+.bar{
+  max-width:980px;
+  margin:auto;
+  padding:10px 14px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.brand{
+  display:flex;
+  gap:16px;
+  align-items:center;
+}
+
+nav ul{
+  list-style:none;
+  margin:0;
+  padding:0;
+  display:flex;
+  gap:14px;
+}
+
+nav a{
+  color:#c9d1d9;
+  text-decoration:none;
+}
+
+.search input{
+  padding:6px 10px;
+  border-radius:6px;
+  border:none;
+}
+
+.search button{
+  padding:6px 12px;
+  border-radius:6px;
+  border:none;
+  background:#444;
+  color:#fff;
+}
+
+main{
+  max-width:980px;
+  margin:20px auto;
+  padding:0 14px;
+}
+
+.panel{
+  background:var(--card);
+  border-radius:10px;
+  box-shadow:var(--shadow);
+}
+
+.panel-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:14px;
+  border-bottom:1px solid var(--border);
+}
+
+.table-wrap{ padding:14px }
+
+table{
+  width:100%;
+  border-collapse:collapse;
+}
+
+th,td{
+  padding:10px;
+  border-bottom:1px solid #eee;
+  text-align:left;
+}
+
+.actions{
+  display:flex;
+  gap:6px;
+}
+
+.btn{
+  padding:6px 10px;
+  border-radius:6px;
+  text-decoration:none;
+  font-size:13px;
+  font-weight:600;
+}
+
+.btn-add{background:var(--blue);color:#fff}
+.btn-edit{background:var(--warn);color:#000}
+.btn-del{background:var(--danger);color:#fff}
+.btn-save{background:var(--success);color:#fff}
+.btn-cancel{background:#6b7280;color:#fff}
+
+/* ===== Modal ===== */
+.modal{
+  display:none;
+  position:fixed;
+  inset:0;
+}
+
+.modal:target{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.backdrop{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,.4);
+}
+
+.dialog{
+  background:#fff;
+  border-radius:10px;
+  width:500px;
+  z-index:1;
+}
+
+.dialog-header{
+  background:var(--blue);
+  color:#fff;
+  padding:10px;
+  display:flex;
+  justify-content:space-between;
+}
+
+.employee-form{
+  padding:14px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+}
+
+label{
+  display:flex;
+  flex-direction:column;
+  font-size:13px;
+}
+
+input,select{
+  padding:8px;
+  border-radius:6px;
+  border:1px solid var(--border);
+}
+
+.sex{
+  margin-top:10px;
+  border:none;
+}
+
+.dialog-actions{
+  display:flex;
+  justify-content:flex-end;
+  gap:10px;
+  margin-top:14px;
+}
+
+.sr-only{
+  position:absolute;
+  left:-9999px;
+}
