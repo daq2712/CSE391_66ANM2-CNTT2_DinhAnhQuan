@@ -1,0 +1,186 @@
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 16px 60px;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  z-index: 10;
+}
+
+#page-logo a {
+  font-family: "Oleo Script", cursive;
+  font-size: 46px;
+  color: rgb(245, 243, 160);
+  text-decoration: none;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  gap: 18px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: rgb(255, 251, 0);
+  font-size: 18px;
+  padding: 10px 14px;
+  border-radius: 6px;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
+header nav a:hover {
+  background-color: rgba(255, 251, 0, 0.2);
+}
+
+/* ---------- HERO ---------- */
+#hero {
+  height: 800px;
+  background-image: url("extra-files/ocean.jpg");
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* giống khung viền hồng trong ảnh */
+  border-bottom: 4px solid rgb(255, 122, 197);
+}
+
+#hero-content {
+  width: 650px;
+  text-align: center;
+
+  padding: 24px 0;
+  border-radius: 10px;
+
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.35);
+}
+
+#hero-content h1 {
+  margin: 0;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 44px;
+  text-transform: uppercase;
+}
+
+#hero-content p {
+  margin: 12px 0 22px 0;
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+#hero-content a {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 251, 0);
+  padding: 12px 20px;
+  border-radius: 8px;
+
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+#hero-content a:hover {
+  background-color: rgb(255, 238, 0);
+}
+
+/* ---------- HIGHLIGHTS ---------- */
+#highlights {
+  padding: 24px 60px 50px 60px;
+  background: linear-gradient(0deg, rgb(227, 255, 253), rgb(182, 244, 255));
+}
+
+#highlights h2 {
+  text-align: center;
+  margin: 0 0 26px 0;
+  font-size: 32px;
+  font-family: "Raleway", sans-serif;
+  color: rgb(59, 65, 64);
+  text-transform: uppercase;
+}
+
+#destinations {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+}
+
+.destination {
+  width: 320px;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.destination img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.destination p {
+  margin: 12px 0;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+  color: rgb(60, 60, 60);
+  text-transform: uppercase;
+}
+
+.destination strong {
+  color: rgb(0, 160, 117);
+  font-weight: 700;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  background-color: rgb(30, 30, 30);
+  padding: 18px 0;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer img {
+  width: 34px;
+  height: 34px;
+  display: block;
+  opacity: 0.9;
+}
+
+footer a:hover img {
+  opacity: 1;
+}

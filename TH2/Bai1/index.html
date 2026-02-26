@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="card" aria-labelledby="contact-title">
+      <h1 id="contact-title" class="title">
+        Get in touch with us by filling contact form below
+      </h1>
+
+      <form class="contact-form" action="#" method="post">
+        <!-- Row 1: 2 cột -->
+        <div class="row two-col">
+          <label class="sr-only" for="fullName">Full name</label>
+          <input id="fullName" name="fullName" type="text" required
+                 placeholder="* Enter your full name" />
+
+          <label class="sr-only" for="email">Email</label>
+          <input id="email" name="email" type="email" required
+                 placeholder="* Enter your email address" />
+        </div>
+
+        <!-- Row 2: full width -->
+        <div class="row">
+          <label class="sr-only" for="subject">Subject</label>
+          <input id="subject" name="subject" type="text"
+                 placeholder="Enter your subject" />
+        </div>
+
+        <!-- Row 3: textarea -->
+        <div class="row">
+          <label class="sr-only" for="message">Message</label>
+          <textarea id="message" name="message" required
+                    placeholder="* Your message here..."></textarea>
+        </div>
+
+        <!-- Row 4: button trái - note phải -->
+        <div class="row actions">
+          <button type="submit" class="btn">Send message</button>
+          <p class="note">* Please fill all required form field, thanks!</p>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
