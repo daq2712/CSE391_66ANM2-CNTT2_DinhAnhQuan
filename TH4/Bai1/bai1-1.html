@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bảng điểm sinh viên</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .form-group {
+      margin-bottom: 12px;
+    }
+
+    input, button {
+      padding: 8px 10px;
+      margin-right: 8px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .weak {
+      background-color: #fff3cd;
+    }
+
+    .stats {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    .delete-btn {
+      background: #dc3545;
+      color: white;
+      border: none;
+      cursor: pointer;
+      padding: 6px 10px;
+    }
+
+    .delete-btn:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <h1>Bảng Điểm Sinh Viên</h1>
+
+  <div class="form-group">
+    <input type="text" id="fullname" placeholder="Nhập họ tên" />
+    <input type="number" id="score" placeholder="Nhập điểm" min="0" max="10" step="0.1" />
+    <button id="addBtn">Thêm</button>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>STT</th>
+        <th>Họ tên</th>
+        <th>Điểm</th>
+        <th>Xếp loại</th>
+        <th>Thao tác</th>
+      </tr>
+    </thead>
+    <tbody id="studentTableBody"></tbody>
+  </table>
+
+  <div class="stats" id="stats">Tổng số sinh viên: 0 | Điểm trung bình: 0.00</div>
+
+  <script src="bai1-1.js"></script>
+</body>
+</html>
